@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-2</title>
+</head>
+<body>
+    <p>String 1 : hacker</p>
+    <p id="one"></p>
+    <p>String 2 : javascript</p>
+    <p id="two"></p>
+    <script>
+        function reverseString(s){
+            var arr = s.split("");
+            arr = arr.sort();
+            result = arr.join("");
+            
+            return result;
+        }
+
+        var r1 = document.getElementById("one");
+        var r2 = document.getElementById("two");
+        r1.innerHTML = "Reversed Number: " + reverseString("hacker");
+        r2.innerHTML = "Reversed Number: " + reverseString("javascript");
+    </script>
+    
+</body>
+</html>
